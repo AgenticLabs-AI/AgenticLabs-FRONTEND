@@ -4,6 +4,8 @@ import Header from "../components/page/Header";
 import Hero from "../components/page/Hero";
 import Trust from "../components/page/Trust";
 import Pricing from "../components/page/Pricing";
+import Services from "../components/page/Services";
+import Contact from "../components/page/Contact";
 
 const Landing = () => {
   return (
@@ -11,7 +13,9 @@ const Landing = () => {
       <Header />
       <Hero />
       <Trust />
+      <Services />
       <Pricing />
+      <Contact />
       <Footer />
     </div>
   );

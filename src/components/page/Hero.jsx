@@ -10,18 +10,33 @@ const Hero = () => {
   const words = ["faster", "smarter", "better", "efficient"];
 
   return (
-    <div className="relative mt-48 mg:mt-0 h-screen text-center">
+    <div className="relative mt-48 mg:mt-48 h-screen text-center">
       <div
         class="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl"
         aria-hidden="true"
       >
-        <div
-          className="mx-auto aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#9089fc] to-[#ff80b5] opacity-30"
-          style={{
-            clipPath:
-              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 10,
           }}
-        ></div>
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 0.3,
+            delay: 0.6,
+          }}
+        >
+          <div
+            className="mx-auto aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#9089fc] to-[#ff80b5] opacity-30"
+            style={{
+              clipPath:
+                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+            }}
+          ></div>
+        </motion.div>
       </div>
       <div className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
         <motion.h1
@@ -38,7 +53,7 @@ const Hero = () => {
             delay: 0.5,
           }}
           className={cn(
-            "relative mb-6 max-w-4xl mx-auto text-6xl leading-normal font-bold tracking-tight text-zinc-700 md:text-7xl dark:text-zinc-100"
+            "relative mb-6 max-w-4xl mx-auto text-4xl leading-normal font-bold tracking-tight text-zinc-700 md:text-7xl dark:text-zinc-100"
           )}
           layout
         >

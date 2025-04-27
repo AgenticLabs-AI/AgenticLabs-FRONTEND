@@ -68,7 +68,7 @@ const Pricing = () => {
           </div>
 
           {/* Enterprise Plan */}
-          <div className="relative rounded-3xl bg-gray-900 p-8 shadow-2xl ring-1 ring-gray-900/10 sm:p-10">
+          <div className="relative rounded-3xl bg-zinc-900 p-8 shadow-2xl ring-1 ring-gray-900/10 sm:p-10">
             <h3
               id="tier-enterprise"
               className="text-base/7 font-semibold text-indigo-400"

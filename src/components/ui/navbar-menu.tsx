@@ -75,13 +75,15 @@ export const Menu = ({
       className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-sm flex justify-between items-center space-x-4 px-8 py-4"
     >
       <div className="">
+        <a href="/">
         <p className="text-3xl font-bold">al.</p>
+        </a>
       </div>
       <div className="">
       {children}
       </div>
       <div className="flex gap-2">
-      <Button className="rounded-full" variant="ghost">Sign in</Button>
+      {/* <Button className="rounded-full" variant="ghost">Sign in</Button> */}
       <Button className="rounded-full">Get Started</Button>
       <Button className="rounded-full block sm:hidden" variant="ghost"> <MenuIcon/> </Button>
       </div>
