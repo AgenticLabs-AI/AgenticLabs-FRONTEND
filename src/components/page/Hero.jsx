@@ -4,15 +4,19 @@ import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 import image from "../../assets/1.png";
 import { Button } from "../ui/button";
-import { Ghost } from "lucide-react";
+import { Ghost, Linkedin } from "lucide-react";
 
 const Hero = () => {
   const words = ["faster", "smarter", "better", "efficient"];
 
+  const handleLinkedInClick = () => {
+    window.open("https://www.linkedin.com/company/agenticlabsai", "_blank");
+  };
+
   return (
-    <div className="relative mt-48 mg:mt-48 h-screen text-center">
+    <div className="relative mt-48 mg:mt-0 h-screen text-center">
       <div
-        class="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl"
+        className="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl"
         aria-hidden="true"
       >
         <motion.div
@@ -92,10 +96,9 @@ const Hero = () => {
           }}
           className="mt-8 flex gap-2 justify-center"
         >
-          <Button variant={"outline"} className="rounded-full">
-            Explore Marketplace
+          <Button onClick={handleLinkedInClick} className="rounded-full">
+            <Linkedin /> Reach out to us on LinkedIn
           </Button>
-          <Button className="rounded-full">Get Started Free</Button>
         </motion.div>
         <motion.div
           initial={{

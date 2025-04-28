@@ -84,8 +84,10 @@ export const Menu = ({
       </div>
       <div className="flex gap-2">
       {/* <Button className="rounded-full" variant="ghost">Sign in</Button> */}
-      <Button className="rounded-full">Get Started</Button>
-      <Button className="rounded-full block sm:hidden" variant="ghost"> <MenuIcon/> </Button>
+      <Button onClick={()=>{
+        window.open("mailto:agenticlabs.ai@gmail.com", "_blank");
+      }} className="rounded-full">Get Started</Button>
+      {/* <Button className="rounded-full block sm:hidden" variant="ghost"> <MenuIcon/> </Button> */}
       </div>
     </nav>
   );

@@ -1,3 +1,4 @@
+import { Check } from "lucide-react";
 import React from "react";
 
 const Pricing = () => {
@@ -29,7 +30,6 @@ const Pricing = () => {
         </p>
 
         <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
-          {/* Basic Plan */}
           <div className="rounded-3xl rounded-t-3xl bg-white/60 p-8 ring-1 ring-gray-900/10 sm:mx-8 sm:rounded-b-none sm:p-10 lg:mx-0 lg:rounded-tr-none lg:rounded-bl-3xl">
             <h3
               id="tier-basic"
@@ -52,14 +52,22 @@ const Pricing = () => {
               className="mt-8 space-y-3 text-sm/6 text-gray-600 sm:mt-10"
             >
               <li className="flex gap-x-3">
-                🛠️ Workflow setup and optimization
+                <Check className="text-green-600" /> Workflow setup and
+                optimization
               </li>
-              <li className="flex gap-x-3">🤖 AI agent integration</li>
-              <li className="flex gap-x-3">📊 Basic automation reporting</li>
-              <li className="flex gap-x-3">⏱️ 24-hour standard support</li>
+              <li className="flex gap-x-3">
+                <Check className="text-green-600" /> AI agent integration
+              </li>
+              <li className="flex gap-x-3">
+                <Check className="text-green-600" /> Basic automation reporting
+              </li>
+              <li className="flex gap-x-3">
+                <Check className="text-green-600" /> 24-hour standard support
+              </li>
             </ul>
             <a
-              href="#"
+              href="mailto:agenticlabs.ai@gmail.com?subject=Inquiry%20about%20Startup%20Support%20Plan&body=Hello%20AgenticLabs%20Team,%0A%0AI%20am%20interested%20in%20the%20Startup%20Support%20Plan%20($49/hour)%20and%20would%20like%20to%20learn%20more%20about%20it.%20Please%20provide%20me%20with%20additional%20details.%0A%0AThank%20you,%0A[Your%20Name]"
+              target="_blank"
               aria-describedby="tier-basic"
               className="mt-8 block rounded-full px-3.5 py-2.5 text-center text-sm font-semibold text-black ring-1 ring-zinc-200 ring-inset hover:ring-zinc-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:mt-10"
             >
@@ -89,24 +97,33 @@ const Pricing = () => {
               className="mt-8 space-y-3 text-sm/6 text-gray-300 sm:mt-10"
             >
               <li className="flex gap-x-3">
-                🛠️ Custom workflow design and scaling
-              </li>
-              <li className="flex gap-x-3">🤖 Advanced multi-agent systems</li>
-              <li className="flex gap-x-3">
-                📈 Deep analytics and performance tracking
+                <Check className="text-green-600" /> Custom workflow design and
+                scaling
               </li>
               <li className="flex gap-x-3">
-                🤝 Dedicated automation consultant
+                <Check className="text-green-600" /> Advanced multi-agent
+                systems
               </li>
               <li className="flex gap-x-3">
-                🔌 API and custom tool integrations
+                <Check className="text-green-600" /> Deep analytics and
+                performance tracking
               </li>
               <li className="flex gap-x-3">
-                ⚡ Priority support (within 2 hours)
+                <Check className="text-green-600" /> Dedicated automation
+                consultant
+              </li>
+              <li className="flex gap-x-3">
+                <Check className="text-green-600" /> API and custom tool
+                integrations
+              </li>
+              <li className="flex gap-x-3">
+                <Check className="text-green-600" /> Priority support (within 2
+                hours)
               </li>
             </ul>
             <a
-              href="#"
+              href="mailto:agenticlabs.ai@gmail.com?subject=Inquiry%20about%20Startup%20Support%20Plan&body=Hello%20AgenticLabs%20Team,%0A%0AI%20am%20interested%20in%20the%20Startup%20Support%20Plan%20($129/hour)%20and%20would%20like%20to%20learn%20more%20about%20it.%20Please%20provide%20me%20with%20additional%20details.%0A%0AThank%20you,%0A[Your%20Name]"
+              target="_blank"
               aria-describedby="tier-enterprise"
               className="mt-8 block rounded-full bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 sm:mt-10"
             >
