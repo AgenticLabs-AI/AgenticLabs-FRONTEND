@@ -53,7 +53,7 @@ const Hero = () => {
             delay: 0.5,
           }}
           className={cn(
-            "relative mb-6 max-w-4xl mx-auto text-4xl leading-normal font-bold tracking-tight text-zinc-700 md:text-7xl dark:text-zinc-100"
+            "relative mb-6 max-w-4xl mx-auto text-6xl leading-normal font-bold tracking-tight text-zinc-700 md:text-7xl dark:text-zinc-100"
           )}
           layout
         >
