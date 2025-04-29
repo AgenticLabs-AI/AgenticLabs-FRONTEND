@@ -6,6 +6,7 @@ import Trust from "../components/page/Trust";
 import Pricing from "../components/page/Pricing";
 import Services from "../components/page/Services";
 import Contact from "../components/page/Contact";
+import Products from "../components/page/Products/Products";
 
 const Landing = () => {
   return (
@@ -13,6 +14,7 @@ const Landing = () => {
       <Header />
       <Hero />
       <Trust />
+      <Products />
       <Services />
       <Pricing />
       <Contact />

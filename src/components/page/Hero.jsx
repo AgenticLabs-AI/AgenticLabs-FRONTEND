@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import image from "../../assets/1.png";
 import { Button } from "../ui/button";
 import { Ghost, Linkedin } from "lucide-react";
+import Announcement from "./Announcement";
 
 const Hero = () => {
   const words = ["faster", "smarter", "better", "efficient"];
@@ -43,6 +44,7 @@ const Hero = () => {
         </motion.div>
       </div>
       <div className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+        <Announcement />
         <motion.h1
           initial={{
             opacity: 0,

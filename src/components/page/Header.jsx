@@ -18,6 +18,7 @@ function Navbar({ className }) {
     >
       <Menu setActive={setActive} className="flex justify-between items-center">
         <div className="hidden gap-6 sm:flex">
+          <HoveredLink href="/">Home</HoveredLink>
           <MenuItem setActive={setActive} active={active} item="Solutions">
             <div className="flex flex-col space-y-4 text-sm">
               <HoveredLink>Business Process Automation</HoveredLink>
