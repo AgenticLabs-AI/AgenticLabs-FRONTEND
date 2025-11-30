@@ -13,14 +13,25 @@ const Contact = () => {
             below, and let's build something incredible together.
           </p>
         </div>
-        <div className="mt-16 mx-auto max-w-4xl">
-          <iframe
-            src="https://n8n-k1i8.onrender.com/form/38f0bc43-1a61-49a0-8bb9-fc49d4cc86d4"
-            title="Contact Form"
-            className="w-full h-[600px] border rounded-lg shadow-md"
-            frameBorder="0"
-            allowFullScreen
-          ></iframe>
+        <div className="mt-16 mx-auto max-w-4xl grid grid-cols-1 gap-8 sm:grid-cols-3 text-center">
+          <div className="p-6 bg-gray-50 rounded-2xl">
+            <h3 className="text-lg font-semibold text-gray-900">Email</h3>
+            <p className="mt-2 text-gray-600">
+              <a href="mailto:agenticlabs.ai@gmail.com">
+                agenticlabs.ai@gmail.com
+              </a>
+            </p>
+          </div>
+          <div className="p-6 bg-gray-50 rounded-2xl">
+            <h3 className="text-lg font-semibold text-gray-900">Phone</h3>
+            <p className="mt-2 text-gray-600">
+              <a href="tel:+919537527143">+91 9537527143</a>
+            </p>
+          </div>
+          <div className="p-6 bg-gray-50 rounded-2xl">
+            <h3 className="text-lg font-semibold text-gray-900">Office</h3>
+            <p className="mt-2 text-gray-600">Ahmedabad, Gujarat</p>
+          </div>
         </div>
       </div>
     </div>
